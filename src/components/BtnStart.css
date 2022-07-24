@@ -1,0 +1,82 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.button {
+    visibility: visible;
+    margin: auto;
+    color: #db3eb1;
+    border: 6px solid #db3eb1;
+    border-radius: 15px;
+    padding: 15px 25px;
+    font-size: 3rem;
+    font-family: tahoma;
+    letter-spacing:5px;
+    cursor: pointer;
+    font-weight: bold;
+    filter: drop-shadow(0 0 15px #db3eb1) drop-shadow(0 0 50px #db3eb1) contrast(2) brightness(2);
+    transition: .5s;
+  }
+  
+  .button:hover {
+    color: rgb(0, 162, 255);
+    background-color: #db3eb1;
+    filter: drop-shadow(0 0 20px #db3eb1) contrast(2) brightness(2);
+  }
+
+  .unicorn {
+    position: relative;
+    width: 6rem;
+    height: auto;
+    right: 50%;
+    fill: orange;
+  }
+
+   @keyframes color-change {
+      0% { fill: red; }
+      50% { fill: blue; }
+      100% { fill: green; }
+    }
+
+  .unicornOut {
+      position: relative;
+      right: 50%;
+      width: 5rem;
+      height: auto;
+      animation: popup 3s 1s linear forwards;
+    }
+   
+    @keyframes popup {
+    0% {
+        transform: translateY(0px);
+      }
+      50% {
+        transform: translateY(-4rem);
+      }
+      100% {
+        transform: translateY(-4rem);
+      }
+
+  }
+  .unicornIn {
+    position: relative;
+    right: 50%;
+    width: 5rem;
+    height: auto;
+    animation: popup2 3s 1s linear backwards;
+  }
+
+  @keyframes popup2 {
+    0% {
+        transform: translateY(-4rem);
+      }
+      50% {
+        transform: translateY(0px);
+      }
+      100% {
+        transform: translateY(0px);
+      }
+  }
