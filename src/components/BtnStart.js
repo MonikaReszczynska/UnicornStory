@@ -1,39 +1,29 @@
-import { useRef, useState } from 'react';
-import Unicorn from './Unicorn';
-import unicorn from '../unicorn2.svg'
+import { useState } from 'react';
+import UnicornBtn from './UnicornBtn';
+import Screen from './Screen';
 import './BtnStart.css' 
+
+let data = require("./ScreensData.json"); 
+
 
 
 function BtnStart() {
-    const unicornRef = useRef(null);
-
     const [isShown, setIsShown] = useState(false);
-    const [button,setButton]=useState(true);
+    const [count, setCount] = useState(0);
 
     const handleClick = event => {
         setIsShown(true);
-        setButton(false);
     };
 
-    function Box() {
-        return (
-          <div>
-            <h2>Box</h2>
-          </div>
-        );
-      }
+    const counter = (id) => {
+      setCount(data[count].options[id].nextId);
+    }
 
     return(
         <div className='container'>
             
-            <button className='button' 
-                onMouseOver={() => {unicornRef.current.className = "unicornOut"}}
-                onMouseOut={() => {unicornRef.current.className = "unicornIn"}}
-                onClick={handleClick} 
-               >START</button>
-            {/* <img src={unicorn} className="unicorn" alt="logo" ref={unicornRef} /> */}
-            < Unicorn ref={unicornRef}/>
-            {isShown && <Box />}
+            {!isShown && <UnicornBtn onClick={handleClick} />}
+            {isShown && <Screen onClick={counter} count={count} />}
         </div>
         
     );

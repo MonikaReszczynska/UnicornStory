@@ -1,82 +1,89 @@
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .button {
-    visibility: visible;
-    margin: auto;
-    color: #db3eb1;
-    border: 6px solid #db3eb1;
-    border-radius: 15px;
-    padding: 15px 25px;
-    font-size: 3rem;
-    font-family: tahoma;
-    letter-spacing:5px;
-    cursor: pointer;
-    font-weight: bold;
-    filter: drop-shadow(0 0 15px #db3eb1) drop-shadow(0 0 50px #db3eb1) contrast(2) brightness(2);
-    transition: .5s;
-  }
-  
-  .button:hover {
-    color: rgb(0, 162, 255);
-    background-color: #db3eb1;
-    filter: drop-shadow(0 0 20px #db3eb1) contrast(2) brightness(2);
-  }
+  visibility: visible;
+  margin: auto;
+  color: #db3eb1;
+  border: 6px solid #db3eb1;
+  border-radius: 15px;
+  padding: 15px 25px;
+  font-size: 3rem;
+  font-family: tahoma;
+  letter-spacing: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  filter: drop-shadow(0 0 15px #db3eb1) drop-shadow(0 0 50px #db3eb1)
+    contrast(2) brightness(2);
+  transition: 0.5s;
+  z-index: 1;
+}
 
-  .unicorn {
-    position: relative;
-    width: 6rem;
-    height: auto;
-    right: 50%;
-    fill: orange;
-  }
+.button:hover {
+  color: rgb(0, 162, 255);
+  background-color: #db3eb1;
+  filter: drop-shadow(0 0 20px #db3eb1) contrast(2) brightness(2);
+}
 
-   @keyframes color-change {
-      0% { fill: red; }
-      50% { fill: blue; }
-      100% { fill: green; }
-    }
+.test {
+  position: absolute;
+  margin: auto;
+}
 
-  .unicornOut {
-      position: relative;
-      right: 50%;
-      width: 5rem;
-      height: auto;
-      animation: popup 3s 1s linear forwards;
-    }
-   
-    @keyframes popup {
-    0% {
-        transform: translateY(0px);
-      }
-      50% {
-        transform: translateY(-4rem);
-      }
-      100% {
-        transform: translateY(-4rem);
-      }
+.unicorn {
+  position: relative;
+  bottom: 0;
+  width: 6rem;
+  height: auto;
+  animation: color-change 3s linear infinite;
+  z-index: 0;
+}
 
-  }
-  .unicornIn {
-    position: relative;
-    right: 50%;
-    width: 5rem;
-    height: auto;
-    animation: popup2 3s 1s linear backwards;
-  }
+@keyframes color-change {
+  0% { fill: #ee6055; }
+  25% { fill: #60d394; }
+  50% { fill: #aaf683; }
+  75% { fill: #ffd97d; }
+  100% { fill: #ff9b85; }
+}
 
-  @keyframes popup2 {
-    0% {
-        transform: translateY(-4rem);
-      }
-      50% {
-        transform: translateY(0px);
-      }
-      100% {
-        transform: translateY(0px);
-      }
+.unicornOut {
+  position: absolute;
+  width: 6rem;
+  height: auto;
+  animation: popup 3s 1s linear forwards;
+}
+
+@keyframes popup {
+  0% {
+    transform: translateY(0px);
   }
+  50% {
+    transform: translateY(-5rem);
+  }
+  100% {
+    transform: translateY(-5rem);
+  }
+}
+.unicornIn {
+  position: absolute;
+  width: 6rem;
+  height: auto;
+  animation: popup2 3s 1s linear backwards;
+}
+
+@keyframes popup2 {
+  0% {
+    transform: translateY(-5rem);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
