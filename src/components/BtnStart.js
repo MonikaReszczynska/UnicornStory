@@ -16,10 +16,6 @@ function BtnStart() {
     };
 
     const counter = (id) => {
-        // setCount( count = 5)
-        // setCount(5)
-        console.log(id)
-        console.log(data[count])
       setCount(data[count].options[id].nextId);
     }
 
