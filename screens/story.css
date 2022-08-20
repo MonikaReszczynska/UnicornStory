@@ -1,0 +1,47 @@
+.textContainer {
+  position: absolute;
+  top: 15%;
+  left: 35%;
+  text-align: center;
+  animation: fadeInAnimation linear 1s;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        transform: scale(0, 0);
+    }
+    100% {
+        transform: scale(1, 1);
+     }
+}
+
+.text {
+  background-color: bisque;
+  margin: auto;
+  width: 20rem;
+  height: 15rem;
+  padding: 15px 10px;
+  border: 3px solid rgb(255, 202, 136);
+  
+}
+
+.button {
+    margin: 1.5rem 0.5rem 1rem;
+    color: #db3eb1;
+    border: 2px solid #db3eb1;
+    border-radius: 15px;
+    padding: 5px 10px;
+    font-size: 1rem;
+    font-family: tahoma;
+    letter-spacing: 3px;
+    cursor: pointer;
+    font-weight: bold;
+    filter: drop-shadow(0 0 5px #db3eb1) drop-shadow(0 0 15px #db3eb1)
+      contrast(2) brightness(2);
+    transition: 0.5s;
+}
+
+.button:hover {
+    color: rgb(0, 162, 255);
+    background-color: #db3eb1;
+  }

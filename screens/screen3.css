@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  background-color: #008013;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.path {
+    position: absolute;
+    height: 10rem;
+    width: 100%;
+    bottom: 10%;
+    background-color: #b88253;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.river {
+  position: absolute;
+  height: 100%;
+  width: 40%;
+  background-color: blue;
+}
+
+.riverWave {
+  position: absolute;
+  left: 3rem;
+  height: 4rem;
+  width: 0.5rem;
+  background-color: aqua;
+  animation: waveMoving 10s infinite;
+}
+
+@keyframes waveMoving {
+  0% {
+    bottom: -5%;
+  }
+  100% {
+    bottom: 100%;
+  }
+}
+
+.riverSticks {
+  position: absolute;
+  top: 3rem;
+  right: 1rem;
+  height: 4rem;
+  width: 0.5rem;
+  background-color: greenyellow;
+  animation: sticksGrowing 3s forwards;
+}
+
+@keyframes sticksGrowing {
+  0% {
+    transform: scale(0, 0);
+  }
+  10% {
+    transform: scale(1, 0);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+.bridge {
+  position: absolute;
+  clip-path: polygon(
+    21% 20%,
+    80% 20%,
+    100% 30%,
+    100% 77%,
+    79% 71%,
+    21% 72%,
+    0 79%,
+    0% 30%
+  );
+  height: 40%;
+  width: 50%;
+  height: 70%;
+  bottom: -10%;
+  background-color: #743c08;
+  background-image: repeating-linear-gradient(
+    to right,
+    #ba8c63,
+    #5d4632 20px,
+    #9198e5 20px,
+    #9198e5 25px
+  );
+}
+
+.field {
+  position: absolute;
+  right: 0;
+  width: 25rem;
+  height: 20rem;
+  background-image: repeating-linear-gradient(
+    to right,
+    #ba8c63,
+    #5d4632 20px,
+    #86786c 20px,
+    #86786c 25px
+  );
+}
+
+.bushes {
+    position: absolute;
+    top: 5rem;
+    left: 5rem;
+    width: 10rem;
+    height: 10rem;
+    background-color: rgb(22, 255, 22);
+    animation: bushesShown 1s backwards;
+}
+
+@keyframes bushesShown {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
