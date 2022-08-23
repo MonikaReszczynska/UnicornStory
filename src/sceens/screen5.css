@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  background-color: lightblue;
+}
+
+.octopus {
+  position: absolute;
+  width: 6rem;
+  height: 10rem;
+  background-color: violet;
+  transform: rotate(-25deg);
+  animation: OctopusFloat 2s alternate infinite;
+}
+
+@keyframes OctopusFloat {
+  0% {
+    bottom: 7rem;
+    right: 15rem;
+  }
+  100% {
+    bottom: 10rem;
+    right: 18rem;
+  }
+}
+
+.school {
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  top: 7rem;
+  right: -15%;
+  background-color: rgb(105, 192, 105);
+  animation: SchoolFloat 5s infinite;
+  animation-delay: 2s;
+}
+
+@keyframes SchoolFloat {
+  0% {
+    top: 7rem;
+    right: -15%;
+  }
+  25% {
+    top: 7rem;
+    right: 22%;
+  }
+  50% {
+    top: 7rem;
+    right: 55%;
+  }
+  100% {
+    top: 7rem;
+    right: 100%;
+  }
+}
+
+.narwals {
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  bottom: 7rem;
+  left: 15rem;
+  opacity: 0;
+  background-color: rgb(149, 105, 192);
+  animation: narwalsFloat 5s forwards;
+  animation-delay: 2s;
+}
+
+@keyframes narwalsFloat {
+  0% {
+    bottom: 7rem;
+    left: 15rem;
+    opacity: 0;
+  }
+  25% {
+    bottom: 7rem;
+    left: 15rem;
+    opacity: 1;
+  }
+  100% {
+    bottom: -10%;
+    left: 10%;
+  }
+}
+
+.unicorn {
+  position: absolute;
+  top: 13rem;
+  left: 32rem;
+  width: 10rem;
+  height: 10rem;
+  background-color: rgb(192, 111, 105);
+  animation: UnicornAppearance 2s forwards;
+  animation-delay: 2s;
+  opacity: 0;
+}
+
+@keyframes UnicornAppearance {
+  0% {
+    top: 13rem;
+    left: 32rem;
+    opacity: 0;
+  }
+  100% {
+    top: 13rem;
+    left: 32rem;
+    opacity: 1;
+  }
+}

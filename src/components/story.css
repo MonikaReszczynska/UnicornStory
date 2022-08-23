@@ -1,3 +1,9 @@
+body {
+  margin: 0;
+  background-image: url("../clouds.png");
+  background-color: #cccccc;
+}
+
 .textContainer {
   position: absolute;
   text-align: center;
