@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.grid-container {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  gap: 10px;
+  background-color: #2196f3;
+  padding: 10px;
+}
+
+.div1 {
+  grid-area: 2 / 1 / 5 / 2;
+  background-color: green;
+}
+.div2 {
+  grid-area: 2 / 5 / 5 / 6;
+  background-color: green;
+}
+.div3 {
+  display: flex;
+  justify-content: center;
+  grid-area: 1 / 2 / 4 / 5;
+  background-color: grey;
+}
+.div4 {
+  display: flex;
+  justify-content: center;
+  grid-area: 4 / 3 / 7 / 4;
+  background-color: brown;
+}
+
+.unicorn {
+  position: absolute;
+  bottom: 6rem;
+  width: 4rem;
+  height: 6rem;
+  background-color: plum;
+}
+
+.fairy {
+  position: absolute;
+  top: 10rem;
+  width: 4rem;
+  height: 6rem;
+  background-color: violet;
+}

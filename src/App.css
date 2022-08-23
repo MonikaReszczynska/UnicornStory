@@ -19,8 +19,14 @@
   color: #61dafb;
 }
 
-.screen-container {
+body {
+  margin: 0;
+  background-image: url("clouds.png");
+  background-color: #cccccc;
 
+}
+
+.screen-container {
   padding-left: 3rem;
   padding-right: 3rem;
   margin-top: 3rem;
