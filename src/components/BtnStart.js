@@ -20,7 +20,7 @@ function BtnStart() {
     }
 
     return(
-        <div className='container'>
+        <div className='start-container'>
             
             {!isShown && <UnicornBtn onClick={handleClick} />}
             {isShown && <Screen onClick={counter} count={count} />}

@@ -1,4 +1,4 @@
-.container {
+.start-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -7,14 +7,12 @@
 
 .button {
   visibility: visible;
-  margin: auto;
+  margin: 0 auto;
   color: #db3eb1;
   border: 6px solid #db3eb1;
   border-radius: 15px;
   padding: 15px 25px;
   font-size: 3rem;
-  font-family: tahoma;
-  letter-spacing: 5px;
   cursor: pointer;
   font-weight: bold;
   filter: drop-shadow(0 0 15px #db3eb1) drop-shadow(0 0 50px #db3eb1)
@@ -34,7 +32,7 @@
   margin: auto;
 }
 
-.unicorn {
+.unicornsvg {
   position: relative;
   bottom: 0;
   width: 6rem;
@@ -55,7 +53,7 @@
   position: absolute;
   width: 6rem;
   height: auto;
-  animation: popup 3s 1s linear forwards;
+  animation: popup 3s linear forwards;
 }
 
 @keyframes popup {
@@ -73,7 +71,7 @@
   position: absolute;
   width: 6rem;
   height: auto;
-  animation: popup2 3s 1s linear backwards;
+  animation: popup2 3s linear backwards;
 }
 
 @keyframes popup2 {

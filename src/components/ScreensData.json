@@ -1,128 +1,138 @@
 [
   {
-    "id": "0",
+    "_id": "0",
+    "component": "sceen1",
     "text": "0",
     "options": [
       
         {
           "id":"123",
           "nextId": "1",
-          "name": "1111"
+          "name": "Sea"
         },
         {
           "id":"0b",
           "nextId": "2",
-          "name": "Belgium"
+          "name": "River"
         },
         {
           "id":"0c",
           "nextId": "3",
-          "name": "Germany"
+          "name": "Forest"
         }
       ]
   },
   {
-    "id": "1",
+    "_id": "1",
+    "component": "sceen2",
     "text": "1",
     "options": [
        {
-        "nextId": "2",
-        "name": "2222"
+        "nextId": "4",
+        "name": "Swim with narwhals"
       },
        {
-        "nextId": "3",
-        "name": "123"
+        "nextId": "6",
+        "name": "Go alone"
       }
     ]
   },
   {
-    "id": "2",
+    "_id": "2",
+    "component": "sceen3",
     "text": "2",
     "options": [
        {
-        "nextId": "3",
-        "name": "3333"
+        "nextId": "4",
+        "name": "Jump into the river"
       }
     ]
   },
   {
-    "id": "3",
+    "_id": "3",
+    "component": "sceen4",
     "text": "3",
     "options": [
        {
-        "nextId": "4",
-        "name": "4444"
+        "nextId": "7",
+        "name": "Go forward..."
       },
        {
-        "nextId": "2",
-        "name": "456"
+        "nextId": "5",
+        "name": "Run away!"
       }
     ]
   },
   {
-    "id": "4",
+    "_id": "4",
+    "component": "sceen5",
     "text": "4",
     "options": [
        {
-        "nextId": "5",
-        "name": "5555"
+        "nextId": "6",
+        "name": "Swim forward"
       },
        {
-        "nextId": "2",
-        "name": "Belgium"
+        "nextId": "7",
+        "name": "Come back"
       }
     ]
   },
   {
-    "id": "5",
+    "_id": "5",
+    "component": "sceen6",
     "text": "5",
     "options": [
        {
-        "nextId": "6",
-        "name": "6666"
+        "nextId": "10",
+        "name": "Go forward..."
       }
     ]
   },
   {
-    "id": "6",
+    "_id": "6",
+    "component": "sceen7",
     "text": "6",
     "options": [
        {
-        "nextId": "7",
-        "name": "7777"
+        "nextId": "8",
+        "name": "To the palace!"
       },
        {
-        "nextId": "2",
-        "name": "Belgium"
+        "nextId": "11",
+        "name": "Down the stairs"
       }
     ]
   },
   {
-    "id": "7",
+    "_id": "7",
+    "component": "sceen8",
     "text": "7",
     "options": [
        {
-        "nextId": "8",
-        "name": "8888"
+        "nextId": "9",
+        "name": "Accept"
       },
        {
-        "nextId": "2",
-        "name": "Belgium"
+        "nextId": "10",
+        "name": "Decline"
       }
     ]
   },
   {
-    "id": "8",
+    "_id": "8",
+    "component": "sceen9",
     "text": "8",
     "options": [
        {
-        "nextId": "9",
-        "name": "9999"
+        "nextId": "12",
+        "name": "coming soon..."
       }
     ]
   },
   {
-    "id": "9",
+    "_id": "9",
+    "component": "sceen9",
     "text": "9",
     "options": [
        {
@@ -132,12 +142,13 @@
     ]
   },
   {
-    "id": "10",
+    "_id": "10",
+    "component": "sceen10",
     "text": "10",
     "options": [
        {
         "nextId": "0",
-        "name": "11"
+        "name": "Play again..."
       }
     ]
   }

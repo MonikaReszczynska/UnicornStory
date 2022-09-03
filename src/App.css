@@ -2,6 +2,7 @@
   text-align: center;
   width: auto;
   height: auto;
+  overflow: hidden;
 }
 
 .App-header {
@@ -20,7 +21,6 @@
 }
 
 .screen-container {
-
   padding-left: 3rem;
   padding-right: 3rem;
   margin-top: 3rem;

@@ -5,7 +5,7 @@ import "./BtnStart.css";
 const UnicornSvg = (props, ref) => {
   return (
     <div className="test" ref={ref}>
-      <Unicorn className="unicorn" />
+      <Unicorn className="unicornsvg" />
     </div>
   );
 };

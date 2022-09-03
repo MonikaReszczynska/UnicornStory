@@ -1,0 +1,64 @@
+.grid-container--8 {
+  width: 100vw;
+  height: 100vh;
+ justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1.3fr 0.7fr 1fr; 
+  gap: 0px 0px;
+  grid-template-areas:
+    ". div3 ."
+    "div1 div4 div2"
+    "div1 div4 div2";
+    background-color: #008000;
+}
+
+.div1 {
+  grid-area: div1;
+}
+.div2 {
+  grid-area: div2;
+}
+
+.bush--8 {
+  fill: rgb(67, 71, 30);
+  height: 80%;
+}
+.div3 {
+  grid-area: div3;
+  justify-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.tree--8 {
+  height: 20rem;
+  fill: #ffd700;
+}
+
+.div4 {
+  display: flex;
+  justify-content: center;
+  grid-area: div4;
+}
+
+.unicorn--8 {
+  position: absolute;
+  bottom: 6rem;
+  height: 6rem;
+}
+
+.fairy {
+  position: absolute;
+  height: 6rem;
+  animation: fairyFloating 6s infinite;
+}
+
+@keyframes fairyFloating {
+  0%{
+    top: 25%
+  }
+  100%{
+    top: 15%;
+  }
+}

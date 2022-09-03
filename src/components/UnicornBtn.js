@@ -6,7 +6,7 @@ const UnicornBtn = (props) => {
   const unicornRef = useRef(null);
 
   return (
-    <div className="container">
+    <div className="start-container">
       <button
         className="button"
         onMouseOver={() => {

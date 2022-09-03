@@ -1,0 +1,77 @@
+.grid-container--7 {
+  width: 100vw;
+  height:100%;
+  justify-items: center;
+  display: inline-grid; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    ". cst ."
+    "t1 t3 t2"
+    ". t3 s1"; 
+  background-color: #2196f3;
+}
+
+.t1 {
+  grid-area: t1;
+  height: 40rem;
+  fill: black;
+  z-index: 1;
+}
+.t2 {
+  height: 40rem;
+  grid-area: t2;
+  z-index: 1;
+  
+}
+.cst {
+  width: 50%;
+  height: auto;
+  grid-area: cst;
+  z-index: 1;
+}
+.t3 {
+  justify-content: center;
+  bottom: -5%;
+  height: 100%;
+  width: 10rem;
+  grid-area: t3;
+  background-color: black;
+  clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+  background-image: url(../assets/icons/stones.svg);
+}
+
+.unicorn--7 {
+  position: absolute;
+  bottom: 0;
+  left: 48%;
+  height: 6rem;
+}
+
+.school--2 {
+  width: 3rem;
+  position: absolute;
+  transform: rotateY(180deg);
+  animation: SchoolFloat--2 10s infinite;
+}
+
+@keyframes SchoolFloat--2 {
+  0% {
+    top: 7%;
+    right: 5%;
+  }
+  33% {
+    top: 24%;
+    right: 86%;
+  }
+  66% {
+    top: 66%;
+    right: 24%;
+    transform: rotateY(0deg);
+  }
+  100% {
+    top: 7%;
+    right: 5%;
+  }
+}
