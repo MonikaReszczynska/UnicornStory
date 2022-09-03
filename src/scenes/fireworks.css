@@ -1,0 +1,72 @@
+.firework {
+  
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+}
+
+.firework > .before2,
+.firework > .after2 {
+
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  box-shadow: 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff;
+  animation-delay: 0.5s, 0.5s, 0.5s;
+  animation: 1s bang ease-out 1s infinite backwards, 1s gravity ease-in 1s infinite backwards, 5s position linear 1s infinite backwards;
+}
+
+.firework > .after {
+  animation-delay: 1s, 1s, 1s;
+  animation-duration: 1s, 1s, 6s;
+}
+
+@keyframes bang {
+  to {
+    box-shadow: 67px -181px hsl(319deg, 100%, 50%), -111px -76px hsl(1deg, 100%, 50%), 124px -83px hsl(42deg, 100%, 50%), -64px -73px hsl(131deg, 100%, 50%), 245px -101px hsl(243deg, 100%, 50%), -96px -195px hsl(41deg, 100%, 50%), 233px -69px hsl(247deg, 100%, 50%), 39px -213px hsl(263deg, 100%, 50%), -60px -93px hsl(277deg, 100%, 50%);
+  }
+}
+
+@keyframes gravity {
+  to {
+    transform: translateY(150px);
+    opacity: 0;
+  }
+}
+
+@keyframes position {
+  0%, 19.9% {
+    margin-top: 10%;
+    margin-left: 40%;
+  }
+  20%, 39.9% {
+    margin-top: 40%;
+    margin-left: 30%;
+  }
+  40%, 59.9% {
+    margin-top: 20%;
+    margin-left: 70%;
+  }
+  60%, 79.9% {
+    margin-top: 30%;
+    margin-left: 20%;
+  }
+  80%, 99.9% {
+    margin-top: 30%;
+    margin-left: 80%;
+  }
+}
+@keyframes moveYear {
+  100% {
+    transform: translateY(-137px);
+  }
+}
+*,
+*::before2,
+*::after2 {
+  box-sizing: border-box;
+  color: inherit;
+  list-style: none;
+}
+
+/*# sourceMappingURL=fireworks.css.map */

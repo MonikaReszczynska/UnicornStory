@@ -1,0 +1,218 @@
+.scene2-container {
+  position: absolute;
+  text-align: center;
+  background-color: aqua;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.beach {
+  height: 75%;
+  background: linear-gradient(14deg, rgb(156, 142, 99), rgb(233, 213, 155));
+  clip-path: ellipse(171% 100% at 147.66% 0%);
+}
+
+.umbrella {
+  fill: rgb(142, 164, 226);
+  position: absolute;
+  width: 20rem;
+  height: 20rem;
+}
+
+.u1 {
+  top: 5%;
+  right: 45%;
+}
+
+.u2 {
+
+  right: 1%;
+}
+
+.unicorn--2 {
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  animation: unicornMoving 8s forwards;
+}
+
+@keyframes unicornMoving {
+  0% {
+    top: 10%;
+    right: 10%;
+    opacity: 0;
+  }
+  10% {
+    top: 10%;
+    right: 10%;
+    opacity: 1;
+  }
+  20% {
+    top: 20%;
+    right: 20%;
+    opacity: 0;
+  }
+  40% {
+    top: 30%;
+    right: 30%;
+    opacity: 0;
+  }
+  50% {
+    top: 30%;
+    right: 30%;
+    opacity: 1;
+  }
+  60% {
+    top: 30%;
+    right: 30%;
+    opacity: 0;
+  }
+  80% {
+    top: 40%;
+    right: 40%;
+    opacity: 0;
+  }
+  100% {
+    top: 40%;
+    right: 40%;
+    opacity: 1;
+  }
+}
+
+.wave1 {
+  fill: #b4f2ff;
+  opacity: 0.5;
+  position: absolute;
+  clip-path: ellipse(171% 100% at 147.66% 0%);
+  animation: moveUp 2s linear infinite;
+}
+.wave2 {
+  fill: #b4f2ff;
+  opacity: 0.5;
+  position: absolute;
+  bottom: 5rem;
+  left: -15rem;
+  clip-path: ellipse(171% 100% at 147.66% 0%);
+  transform: rotate(15deg) scale(0.8) scaleX(-1);
+  animation: moveUp 1s linear infinite;
+}
+.wave3 {
+  fill: #b4f2ff;
+  opacity: 0.5;
+  position: absolute;
+  left: 0;
+  bottom: 4rem;
+  clip-path: ellipse(171% 100% at 147.66% 0%);
+  transform: rotate(5deg) scale(0.8);
+  animation: moveUp 3s linear infinite;
+}
+
+@keyframes moveUp {
+  0% {
+    opacity: 0.8;
+    bottom: 0;
+  }
+  25% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  75% {
+    opacity: 0.1;
+    bottom: 10%;
+  }
+  100% {
+    opacity: 0;
+    bottom: 8%;
+  }
+}
+
+.narwhals-box {
+  z-index: 1;
+  position: absolute;
+  animation: boxMoving 5s forwards;
+}
+
+@keyframes boxMoving {
+  0% {
+    bottom: -10%;
+    left: -10%;
+  }
+  50% {
+    bottom: 10%;
+    left: 10%;
+  }
+  100% {
+    bottom: 10%;
+    left: 10%;
+    transform: rotate(45deg);
+  }
+}
+
+.narwhal {
+  position: static;
+  width: 15rem;
+  height: 15rem;
+  fill: pink;
+  transform: rotate(95deg);
+
+  animation: narwhal-rotate 1s 2 linear forwards;
+  animation-delay: 5s;
+}
+
+.n1 {
+  top: 0;
+  left: 30%;
+}
+
+.n2 {
+  bottom: 5%;
+  left: 35%;
+}
+
+@keyframes narwhal-rotate {
+  0% {
+    transform: rotate(95deg);
+  }
+  50% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(95deg);
+  }
+}
+
+.heart {
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  animation: hearts-go-up 1s 2 linear;
+  animation-delay: 5s;
+  z-index: -1
+}
+
+.hrt1 {
+  bottom: 30%;
+  left: 20%;
+}
+
+.hrt2 {
+  bottom: 30%;
+  left: 70%;
+}
+
+@keyframes hearts-go-up {
+  0% {
+    bottom: 30%
+  }
+  50% {
+    bottom: 50%;
+    transform: rotate(90deg);
+  }
+  100% {
+    bottom: 70%;
+    transform: rotate();
+  }
+}

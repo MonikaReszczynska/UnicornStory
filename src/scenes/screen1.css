@@ -1,0 +1,227 @@
+.scene1-container {
+  text-align: center;
+  background: black;
+  animation: bgChange 10s forwards;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+@keyframes bgChange {
+  0% {
+    background: black;
+  }
+  50% {
+    background: skyblue;
+  }
+  100% {
+    background: deepskyblue;
+  }
+}
+
+.sun {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  animation: sunRising 7s forwards;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  background: orange;
+  box-shadow: 0 0 10px orange, 0 0 60px orange, 0 0 200px yellow,
+    inset 0 0 80px yellow;
+}
+
+@keyframes sunRising {
+  0% {
+    top: 70%;
+    left: -10%;
+  }
+  50% {
+    top: 30%;
+    left: 25%;
+  }
+  100% {
+    top: 5%;
+    left: 50%;
+  }
+}
+
+.cloud {
+  width: 200px;
+  height: 60px;
+  background: white;
+  position: relative;
+  border-radius: 200px;
+  opacity: 0.8;
+  filter: blur(3px);
+}
+
+.cloud:before,
+.cloud:after {
+  content: "";
+  background: white;
+  position: absolute;
+  width: 100px;
+  height: 80px;
+  top: -30px;
+  left: 10px;
+  border-radius: 100px;
+  transform: rotate(30deg);
+}
+
+.cloud:after {
+  width: 120px;
+  height: 120px;
+  top: -55px;
+  left: auto;
+  right: 15px;
+}
+
+.c1 {
+  margin-top: 100px;
+  animation: moveclouds 20s linear infinite;
+}
+
+.c2 {
+  margin-top: 30px;
+  animation: moveclouds 22s linear infinite;
+  animation-delay: -2s;
+}
+
+.c3 {
+  margin-top: 50px;
+  animation: moveclouds 15s linear infinite;
+  animation-delay: -2s;
+}
+
+@keyframes moveclouds {
+  0% {
+    left: 110%;
+  }
+  100% {
+    left: -10%;
+  }
+}
+
+.land {
+  bottom: 0;
+  width: 70%;
+  height: 60%;
+  position: absolute;
+  animation: ldChange 10s forwards;
+}
+
+.l1 {
+  right: 0;
+  border-radius: 100% 0 0 0;
+  border-left: 3px solid black;
+}
+
+.l2 {
+  left: 0;
+  border-radius: 0 100% 0 0;
+  border-right: 3px solid black;
+}
+
+@keyframes ldChange {
+  0% {
+    background: #003300;
+  }
+  50% {
+    background: #006600;
+  }
+  100% {
+    /* background: #006600; */
+    background: linear-gradient(
+      130deg,
+      rgba(41, 253, 29, 1) 40%,
+      rgba(27, 119, 38, 1) 100%
+    );
+  }
+}
+
+.tree {
+  position: absolute;
+  bottom: 10%;
+  left: -15%;
+  width: 60rem;
+  height: 30rem;
+  animation: trAppear 2s forwards;
+}
+
+.tree2 {
+  position: absolute;
+  bottom: 25%;
+  left: -10%;
+  width: 60rem;
+  height: 30rem;
+  animation: trAppear 2s forwards;
+}
+
+@keyframes trAppear {
+  0% {
+    transform: scale(0, 0);
+  }
+  10% {
+    transform: scale(1, 0);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+.field--1 {
+  position: absolute;
+  bottom: 20%;
+  right: 10%;
+  width: 13rem;
+  height: 8rem;
+  background: linear-gradient( red, orange, yellow, green, blue, indigo, violet, red);
+  border-radius: 20%;
+  border: 2px solid #ff00ff;
+
+}
+
+.main-unicorn {
+  width: 10rem;
+  height: 10rem;
+}
+
+.flower {
+  position: absolute;
+  width: 2.5rem;
+  height: 2.5rem;
+  animation: flshown 1s backwards;
+  animation-delay: 5s;
+  fill: pink;
+}
+
+.f1 {
+  bottom: 10%;
+  left: 15%;
+}
+.f2 {
+  bottom: 20%;
+  left: 35%;
+}
+.f3 {
+  bottom: 4%;
+  right: 10%;
+}
+.f4 {
+  bottom: 49%;
+  right: 17%;
+}
+.f5 {
+  bottom: 6%;
+}
+
+@keyframes flshown {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
